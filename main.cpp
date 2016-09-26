@@ -260,7 +260,7 @@ bool checkDiagonal(int row, int col, char player) {
 			x = 0;
 		}
 		if (y >= rows) {
-			y = 0;
+			break;
 		}
 		if (grid[y][x] != player) {
 			break;
@@ -280,7 +280,7 @@ bool checkDiagonal(int row, int col, char player) {
 			x = cols - 1;
 		}
 		if (y < 0) {
-			y = rows - 1;
+			break;
 		}
 		if (grid[y][x] != player) {
 			break;
@@ -302,7 +302,7 @@ bool checkDiagonal(int row, int col, char player) {
 			x = cols - 1;
 		}
 		if (y >= rows) {
-			y = 0;
+			break;
 		}
 		if (grid[y][x] != player) {
 			break;
@@ -322,7 +322,7 @@ bool checkDiagonal(int row, int col, char player) {
 			x = 0;
 		}
 		if (y < 0) {
-			y = rows - 1;
+			break;
 		}
 		if (grid[y][x] != player) {
 			break;
